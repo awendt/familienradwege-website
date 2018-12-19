@@ -1,21 +1,93 @@
+@import './variables.scss';
+@import './reflex.min';
+
+body {
+  background-color: $background;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
 #mapid {
   height: 500px;
 }
 
 h1, h2 {
-  font-family: Georgia, serif;
-  font-size: 3em;
+  font-size: 3.3em;
+  font-weight: bold;
+  color: $text1;
+}
+
+h2 {
+  color: $text2;
+}
+
+h3 {
+  font-size: 2em;
   font-weight: normal;
+  text-align: center;
+  color: $text2;
 }
 
-.container {
-  padding: 50px;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+.hero {
+  padding: 50px 0 10px 0;
 }
 
-.item {
+.map-shows {
+
+  figure {
+    border: 1px solid #f00;
+    border-radius: 5px;
+    overflow: hidden
+  }
+
+  ol {
+    list-style-type: none;
+  }
+}
+
+.card {
+  border:1px solid $text3;
   border-radius: 5px;
-  padding: 20px;
+  background-color: #fff;
+  height: 100%; // this shouldn't be necessary
+  overflow: hidden;
+
+  img {
+    height:250px;
+    object-fit: cover;
+  }
+
+  p, small {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  small {
+    display: block;
+    margin-top: auto;
+  }
+
+  &.yes {
+    border-color: #486824;
+  }
+
+  &.no {
+    border-color: #D13525;
+  }
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p, li {
+  line-height: 1.5em;
+  color: $copy;
+  font-size: 1.2em;
+}
+
+footer {
+  p {
+    text-align: center;
+  }
 }
