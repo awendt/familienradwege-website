@@ -3,7 +3,7 @@
 
 build: website/index.html
 
-local: website/berlin/roads.json website/berlin/paths.json
+local: website/data/berlin/roads.json website/data/berlin/paths.json
 
 install: node_modules
 
@@ -14,6 +14,6 @@ website/index.html:
 	mkdir -p website
 	npx parcel build index.html --out-dir website
 
-website/berlin/%.json:
-	mkdir -p website/berlin
-	wget --directory-prefix=website/berlin --compression=auto https://www.familienradwege.de/berlin/$(notdir $@)
+website/data/berlin/%.json:
+	mkdir -p website/data/berlin
+	wget --directory-prefix=website/data/berlin --compression=auto https://www.familienradwege.de/berlin/$(notdir $@)
