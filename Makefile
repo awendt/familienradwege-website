@@ -20,7 +20,7 @@ images/map@2x.jpg: images/map-big.png
 
 website/index.html:
 	mkdir -p website
-	npx parcel build index.html --out-dir website
+	npx parcel build index.html berlin/index.html --out-dir website
 
 website/data/berlin/%.json:
 	mkdir -p website/data/berlin

@@ -29,6 +29,32 @@ h3 {
 
 .hero {
   padding: 50px 0 10px 0;
+
+  a.to-map {
+    width: 400px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(images/map.jpg) no-repeat;
+
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      /* Retina-specific stuff here */
+      background: url(images/map@2x.jpg) no-repeat;
+      background-size: 400px 400px;
+    }
+    padding-top: 350px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+
+    span {
+      background-color: #fff;
+      display:block;
+      padding: 10px;
+      font-size: 1.3em;
+    }
+  }
 }
 
 .map-shows {
@@ -36,7 +62,7 @@ h3 {
   figure {
     border: 1px solid #f00;
     border-radius: 5px;
-    overflow: hidden
+    overflow: hidden;
   }
 
   ol {
@@ -73,11 +99,6 @@ h3 {
   &.no {
     border-color: #D13525;
   }
-}
-
-figcaption {
-  text-align: center;
-  margin-top: 20px;
 }
 
 p, li {
