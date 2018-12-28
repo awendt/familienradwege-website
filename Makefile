@@ -16,4 +16,4 @@ website/index.html:
 
 website/data/berlin/%.json:
 	mkdir -p website/data/berlin
-	wget --directory-prefix=website/data/berlin --compression=auto https://www.familienradwege.de/berlin/$(notdir $@)
+	wget --directory-prefix=website/data/berlin --compression=auto https://www.familienradwege.de/data/berlin/$(notdir $@)
