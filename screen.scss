@@ -14,6 +14,7 @@ h1, h2 {
   font-size: 3.3em;
   font-weight: bold;
   color: $text1;
+  margin: $header-margin 0;
 }
 
 h2 {
@@ -35,6 +36,7 @@ h3 {
     display: inline-block;
     overflow: hidden;
     background: url(images/map.jpg) no-repeat;
+    margin: $header-margin 0;
 
     @media
     (-webkit-min-device-pixel-ratio: 2),
