@@ -1,4 +1,4 @@
-const BERLIN_COORDINATES = [52.480, 13.454];
+const BERLIN_COORDINATES = [52.524, 13.410];
 
 const GEOJSON_OPTIONS = {
   color: '#426E86',
