@@ -6,7 +6,7 @@ const GEOJSON_OPTIONS = {
   weight: 1.5 // 3 seems to be default
 }
 
-export const map = L.map('mapid').setView(BERLIN_COORDINATES, 12);
+export const map = L.map('mapid').setView(BERLIN_COORDINATES, 13);
 
 export const layers = {
   roads: new L.geoJSON(undefined, GEOJSON_OPTIONS),
