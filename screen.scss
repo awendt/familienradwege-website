@@ -32,7 +32,8 @@ h3 {
   padding: 50px 0 10px 0;
 
   a.to-map {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     display: inline-block;
     overflow: hidden;
     background: url(images/map.jpg) no-repeat;
