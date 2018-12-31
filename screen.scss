@@ -37,6 +37,7 @@ h3 {
     overflow: hidden;
     background: url(images/map.jpg) no-repeat;
     margin: $header-margin 0;
+    float: right;
 
     @media
     (-webkit-min-device-pixel-ratio: 2),
