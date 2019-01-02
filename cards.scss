@@ -2,8 +2,7 @@
   border:1px solid $text3;
   border-radius: 5px;
   background-color: #fff;
-  height: 100%; // this shouldn't be necessary
-  overflow: hidden;
+  flex: 1;
 
   img {
     height:250px;
@@ -27,4 +26,8 @@
   &.no {
     border-color: #D13525;
   }
+}
+
+.full-height {
+  display: flex;
 }
