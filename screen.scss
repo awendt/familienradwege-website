@@ -48,8 +48,8 @@ h3 {
       background: url(images/map@2x.jpg) no-repeat;
       background-size: 400px 400px;
     }
-    @media (max-width: 768px) {
-      /* do not float when sm column collapses */
+    @media (max-width: 992px) {
+      /* do not float when md column collapses */
       float: none;
     }
     padding-top: 350px;
