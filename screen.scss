@@ -2,6 +2,10 @@
 @import './reflex.min';
 @import './cards.scss';
 
+html {
+  font-size: 100%;
+}
+
 body {
   background-color: $background;
   font-family: Roboto, Helvetica, Arial, sans-serif;
@@ -12,7 +16,7 @@ body {
 }
 
 h1, h2 {
-  font-size: 3.3em;
+  font-size: 3.3rem;
   font-weight: bold;
   color: $text1;
   margin: $header-margin 0;
@@ -23,7 +27,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: normal;
   text-align: center;
   color: $text2;
@@ -61,7 +65,7 @@ h3 {
       background-color: #fff;
       display:block;
       padding: 10px;
-      font-size: 1.3em;
+      font-size: 1.3rem;
     }
   }
 }
@@ -80,9 +84,9 @@ h3 {
 }
 
 p, li {
-  line-height: 1.5em;
+  line-height: 1.5rem;
   color: $copy;
-  font-size: 1.2em;
+  font-size: 1.1rem;
 }
 
 footer {
@@ -95,11 +99,11 @@ footer {
 .quiz {
 
   h2 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: left;
   }
 
