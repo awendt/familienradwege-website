@@ -3,6 +3,8 @@
 
 build: website/index.html
 
+all: install local build
+
 local: website/data/berlin/roads.json website/data/berlin/paths.json
 
 install: node_modules
