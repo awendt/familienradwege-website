@@ -1,4 +1,3 @@
-import { translate_keys } from './i18n';
 import { tile_layer } from './tiles';
 import { roads_layer, paths_layer } from './map_data';
 import Map from 'ol/Map';
