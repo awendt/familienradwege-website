@@ -17,4 +17,4 @@ deploy:
   local_dir: website
   acl: public_read
   skip_cleanup: true
-  on: split
+  on: master
