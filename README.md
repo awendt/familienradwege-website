@@ -7,7 +7,7 @@ Aber mit dem Fahrrad? Wie stark ist die Mobilität für Familien mit kleinen Kin
 Um das Problem zu veranschaulichen, kartografieren wir die Radwege,
 die sich für Familien eignen.
 
-[![Kartenausschnitt](images/map.jpg)](https://www.familienradwege.de)
+[![Kartenausschnitt](images/map.jpg)](https://www.familienradwege.de) [![Greenkeeper badge](https://badges.greenkeeper.io/awendt/familienradwege-website.svg)](https://greenkeeper.io/)
 
 ## Woher kommen die Kartendaten?
 
