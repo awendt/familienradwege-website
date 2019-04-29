@@ -1,3 +1,5 @@
+[![Greenkeeper badge](https://badges.greenkeeper.io/awendt/familienradwege-website.svg)](https://greenkeeper.io/)
+
 # Familienfreundliche Radwege
 
 Mit dem Auto kommen Familien in Berlin überall hin.
