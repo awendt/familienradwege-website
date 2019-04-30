@@ -1,6 +1,8 @@
 @import './variables.scss';
 @import './reflex.min';
 @import './cards.scss';
+@import '../node_modules/ol/ol';
+@import '../node_modules/ol-layerswitcher/src/ol-layerswitcher';
 
 html {
   font-size: 100%;
@@ -88,7 +90,7 @@ h3 {
   }
 }
 
-p, li {
+p, .quiz li {
   line-height: 1.5rem;
   color: $copy;
   font-size: 1.125rem;

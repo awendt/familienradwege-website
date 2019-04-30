@@ -1,22 +1,20 @@
-import { translate_keys } from './i18n';
-import { map, layers } from './map';
-import { load_json } from './data';
+import { tile_layer } from './tiles';
+import { roads_layer, paths_layer } from './map_data';
+import Map from 'ol/Map';
+import View from 'ol/View';
+import { fromLonLat } from 'ol/proj';
+import LayerSwitcher from 'ol-layerswitcher';
 
-// Mapbox looks beautiful but requires an API token
-// see https://wiki.openstreetmap.org/wiki/Tiles
-L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png', {
-  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-  maxZoom: 18
-}).addTo(map);
+const BERLIN_COORDINATES = [13.410, 52.524];
 
-Object.keys(layers).forEach(function(key) {
-  const layer = layers[key];
-  layer.addTo(map);
-
-  load_json(key, function() {
-    const geojsonFeature = JSON.parse(this.responseText);
-    layer.addData(geojsonFeature);
-  });
+var map = new Map({
+  target: 'mapid',
+  layers: [tile_layer, roads_layer, paths_layer],
+  view: new View({
+    center: fromLonLat(BERLIN_COORDINATES),
+    zoom: 13
+  })
 });
 
-L.control.layers({}, translate_keys(layers)).addTo(map);
+var layerSwitcher = new LayerSwitcher();
+map.addControl(layerSwitcher);
