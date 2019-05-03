@@ -10,7 +10,7 @@ html {
 
 body {
   background-color: $background;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
 }
 
 #mapid {
@@ -90,7 +90,7 @@ h3 {
   }
 }
 
-p, .quiz li {
+p {
   line-height: 1.5rem;
   color: $copy;
   font-size: 1.125rem;
@@ -102,20 +102,29 @@ footer {
   }
 }
 
+.berlin {
 
-.quiz {
+  section {
 
-  h2 {
-    font-size: 1.625rem;
+    h2 {
+      font-size: 2rem;
+      margin-top: 50px;
+    }
+
+    img {
+      margin-top: 50px;
+      background-color: #fff;
+    }
+
   }
 
-  h3 {
-    font-size: 1.5rem;
-    text-align: left;
+  p {
+    line-height: 2rem;
+    font-size: 1.3rem;
   }
 
-  ol {
-    list-style-type: lower-alpha;
+  .fin {
+    margin-bottom: 100px;
   }
 
 }
