@@ -1,5 +1,5 @@
 @import './variables.scss';
-@import './reflex.min';
+@import '../node_modules/reflex-grid/scss/reflex';
 @import './cards.scss';
 @import '../node_modules/ol/ol';
 @import '../node_modules/ol-layerswitcher/src/ol-layerswitcher';
