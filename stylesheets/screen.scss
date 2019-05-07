@@ -112,8 +112,10 @@ footer {
     }
 
     img {
-      margin-top: 50px;
       background-color: #fff;
+      box-sizing: border-box;
+      margin-top: 50px;
+      padding: 10px;
     }
 
   }
