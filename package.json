@@ -2,7 +2,7 @@
   "dependencies": {
     "ol": "^5.3.2",
     "ol-layerswitcher": "^3.2.0",
-    "parcel-bundler": "^1.11.0",
+    "parcel-bundler": "^1.12.3",
     "reflex-grid": "^2.0.4"
   },
   "devDependencies": {
