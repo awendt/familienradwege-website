@@ -15,9 +15,15 @@ node_modules:
 screenshots:
 	$(MAKE) -C images
 
-website/index.html:
+website/index.html: index.html berlin/index.html
 	mkdir -p website
-	npx parcel build index.html berlin/index.html --out-dir website
+	npx parcel build $| --out-dir website
+
+%.html: pages/%.md
+	pandoc --standalone -t html5 $< > $@
+
+%/index.html: pages/%.md
+	pandoc --standalone -t html5 $< > $@
 
 website/data/berlin/%.json:
 	mkdir -p website/data/berlin
