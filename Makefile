@@ -16,7 +16,6 @@ screenshots:
 	$(MAKE) -C images
 
 website/index.html: index.html berlin/index.html
-	mkdir -p website
 	npx parcel build $| --out-dir website
 
 %.html: pages/%.md
