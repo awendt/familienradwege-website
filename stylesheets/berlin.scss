@@ -31,15 +31,11 @@ img {
 
 }
 
-p:not(.img) {
+body > p:not(.img) {
   line-height: 2rem;
   font-size: 1.3rem;
 
   @extend %left-margin;
-}
-
-footer p {
-  margin-left: 0;
 }
 
 h2 {
