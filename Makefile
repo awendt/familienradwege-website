@@ -18,10 +18,7 @@ screenshots:
 website/index.html: index.html berlin/index.html
 	npx parcel build $^ --out-dir website
 
-%.html: pages/%.md
-	pandoc --standalone -t html5 $< > $@
-
-%/index.html: pages/%.md
+%.html %/index.html: pages/%.md
 	pandoc --standalone -t html5 $< > $@
 
 website/data/berlin/%.json:
