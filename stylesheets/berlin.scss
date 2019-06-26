@@ -1,0 +1,47 @@
+@import './screen.scss';
+
+h2 {
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+img {
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+%left-margin {
+  // col-sm-8
+  @media (min-width: $reflex-sm) {
+    width: 66.66667%;
+  }
+
+  // offset-sm-3
+  @media (min-width: $reflex-sm) {
+    margin-left: 25%;
+  }
+
+  // offset-md-4
+  @media (min-width: $reflex-md) {
+    margin-left: 33.33333%;
+  }
+
+}
+
+p:not(.img) {
+  line-height: 2rem;
+  font-size: 1.3rem;
+
+  @extend %left-margin;
+}
+
+footer p {
+  margin-left: 0;
+}
+
+h2 {
+  @extend %left-margin;
+}

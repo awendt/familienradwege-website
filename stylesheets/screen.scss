@@ -1,5 +1,5 @@
 @import './variables.scss';
-@import '../node_modules/reflex-grid/scss/reflex';
+@import './grid.scss';
 @import './cards.scss';
 @import '../node_modules/ol/ol';
 @import '../node_modules/ol-layerswitcher/src/ol-layerswitcher';
@@ -47,34 +47,28 @@ h3 {
   a.to-map {
     width: 100%;
     max-width: 400px;
-    display: inline-block;
+    max-height: 400px;
+    display: block;
     overflow: hidden;
-    background: url(../images/map.jpg) no-repeat;
-    margin: $header-margin 0;
-    float: right;
+    background: #fff url(../images/map.jpg) top left no-repeat;
+    margin: $header-margin 0 0 auto;
 
     @media
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
       /* Retina-specific stuff here */
-      background: url(../images/map@2x.jpg) no-repeat;
+      background: #fff url(../images/map@2x.jpg) top left no-repeat;
       background-size: 400px 400px;
     }
     @media (max-width: 992px) {
       /* do not float when md column collapses */
       float: none;
     }
-    padding-top: 350px;
+    padding: 410px 0px 10px 0px;
     text-align: center;
     border-radius: 5px;
     box-shadow: 3px 3px 5px 6px #ccc;
-
-    span {
-      background-color: #fff;
-      display:block;
-      padding: 10px;
-      font-size: 1.25rem;
-    }
+    font-size: 1.25rem;
   }
 }
 
@@ -98,36 +92,5 @@ p {
 }
 
 footer {
-  p {
-    text-align: center;
-  }
-}
-
-.berlin {
-
-  section {
-
-    h2 {
-      font-size: 2rem;
-      margin-top: 50px;
-    }
-
-    img {
-      background-color: #fff;
-      box-sizing: border-box;
-      margin-top: 50px;
-      padding: 10px;
-    }
-
-  }
-
-  p {
-    line-height: 2rem;
-    font-size: 1.3rem;
-  }
-
-  .fin {
-    margin-bottom: 100px;
-  }
-
+  text-align: center;
 }

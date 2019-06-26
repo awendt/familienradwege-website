@@ -1,0 +1,82 @@
+$reflex-xs: 576px;
+$reflex-sm: 768px;
+$reflex-md: 992px;
+$reflex-lg: 1200px;
+$reflex-xlg: 1600px;
+
+$gutter: 30px;
+
+body {
+  @media (min-width: $reflex-xs) {
+    max-width: $reflex-xs;
+  }
+
+  @media (min-width: $reflex-sm) {
+    max-width: $reflex-sm;
+  }
+
+  @media (min-width: $reflex-md) {
+    max-width: $reflex-md;
+  }
+
+  @media (min-width: $reflex-lg) {
+    max-width: $reflex-lg;
+  }
+
+  @media (min-width: $reflex-xlg) {
+    max-width: $reflex-xlg;
+  }
+
+  margin: 0 auto !important;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+%columns {
+  flex: 1;
+  padding: 15px;
+}
+
+.grid {
+  display: flex;
+
+  .col {
+    @extend %columns;
+  }
+}
+
+.gutter {
+  margin-left: calc(200% / 12);
+}
+
+ol {
+  display: flex;
+  list-style-type: none;
+  padding: 0; // otherwise, we have a padding-left (from where???)
+
+  li {
+    @extend %columns;
+    margin-bottom: 30px;
+  }
+}
+
+// this emulates gutters (see https://stackoverflow.com/a/48752954/473467)
+ol > * + * {
+  // margin-left: $gutter;
+}
+
+@media (max-width: $reflex-sm) {
+  ol {
+    display: block;
+  }
+}
+
+@media (max-width: $reflex-md) {
+  .grid {
+    display: block;
+  }
+
+  .gutter {
+    margin-left: 0;
+  }
+}
