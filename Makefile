@@ -16,7 +16,7 @@ screenshots:
 	$(MAKE) -C images
 
 website/index.html: index.html berlin/index.html
-	npx parcel build $| --out-dir website
+	npx parcel build $^ --out-dir website
 
 %.html: pages/%.md
 	pandoc --standalone -t html5 $< > $@
