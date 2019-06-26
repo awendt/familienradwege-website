@@ -10,9 +10,6 @@ header-includes:
   ```
 include-after:
 - |
-  <footer>
-    <p>Gemacht mit &#x2764; in Berlin von André.</p>
-  </footer>
   <script src="../js/index.js"></script>
 ---
 

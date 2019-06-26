@@ -8,11 +8,6 @@ header-includes:
   ```{=html}
   <link rel="canonical" href="https://www.familienradwege.de/" />
   ```
-include-after:
-- |
-  <footer>
-    <p>Gemacht mit &#x2764; in Berlin von André.</p>
-  </footer>
 ---
 
 <header class="grid hero">

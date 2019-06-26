@@ -34,7 +34,7 @@ website/index.html: $(HTML)
 	npx parcel build $^ --out-dir website
 
 %.html %/index.html: pages/%.md
-	pandoc --standalone -t html5 $< > $@
+	pandoc --standalone -t html5 $< pages/footer.md > $@
 
 website/data/berlin/%.json:
 	mkdir -p website/data/berlin
