@@ -5,6 +5,7 @@ $reflex-lg: 1200px;
 $reflex-xlg: 1600px;
 
 $gutter: 30px;
+$padding: 15px;
 
 body {
   @media (min-width: $reflex-xs) {
@@ -34,7 +35,11 @@ body {
 
 %columns {
   flex: 1;
-  padding: 15px;
+  padding: $padding;
+}
+
+body > p, body > h3 {
+  padding: $padding;
 }
 
 .grid {
