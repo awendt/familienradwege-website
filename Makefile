@@ -33,8 +33,8 @@ screenshots:
 website/index.html: $(HTML)
 	npx parcel build $^ --out-dir website --no-source-maps
 
-%.html %/index.html: pages/%.md
-	pandoc --standalone -t html5 $< pages/footer.md > $@
+%.html %/index.html: pages/%.md pages/footer.md
+	pandoc --standalone -t html5 $^ > $@
 
 website/data/berlin/%.json:
 	mkdir -p website/data/berlin
