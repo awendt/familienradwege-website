@@ -31,7 +31,7 @@ screenshots:
 	$(MAKE) -C images
 
 website/index.html: $(HTML)
-	npx parcel build $^ --out-dir website
+	npx parcel build $^ --out-dir website --no-source-maps
 
 %.html %/index.html: pages/%.md
 	pandoc --standalone -t html5 $< pages/footer.md > $@
