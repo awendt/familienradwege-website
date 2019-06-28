@@ -61,8 +61,8 @@ h3 {
       background-size: 400px 400px;
     }
     @media (max-width: 992px) {
-      /* do not float when md column collapses */
-      float: none;
+      /* align right when md column collapses */
+      margin: $header-margin 0 0 0;
     }
     padding: 410px 0px 10px 0px;
     text-align: center;
