@@ -29,8 +29,15 @@ body {
   }
 
   margin: 0 auto !important;
-  padding-right: 65px;
-  padding-left: 65px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+}
+
+%flexbox {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 %columns {
@@ -38,12 +45,14 @@ body {
   padding: $padding;
 }
 
-body > p, body > h3 {
+body > p, body > h3, body > h2 {
   padding: $padding;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .grid {
-  display: flex;
+  @extend %flexbox;
 
   .col {
     @extend %columns;
@@ -55,7 +64,8 @@ body > p, body > h3 {
 }
 
 ol {
-  display: flex;
+  @extend %flexbox;
+
   list-style-type: none;
   padding: 0; // otherwise, we have a padding-left (from where???)
 
