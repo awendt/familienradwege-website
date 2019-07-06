@@ -1,0 +1,40 @@
+@import './screen.scss';
+
+h2 {
+  font-size: 2rem;
+  margin-top: 50px;
+  padding: $padding;
+}
+
+img {
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+%left-margin {
+
+  // offset-sm-3
+  @media (min-width: $reflex-sm) {
+    margin-left: 25%;
+  }
+
+  // offset-md-4
+  @media (min-width: $reflex-md) {
+    margin-left: 33.33333%;
+  }
+
+}
+
+body > p:not(.img) {
+  line-height: 2rem;
+  font-size: 1.3rem;
+
+  @extend %left-margin;
+}
+
+h2 {
+  @extend %left-margin;
+}
