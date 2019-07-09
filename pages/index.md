@@ -30,7 +30,7 @@ header-includes:
 
 ### &#x1f914; Was zeigt die Karte?
 
-Die Karte zeigt das Berliner Straßennetz für autofreie Familien,
+Die Karte zeigt das Berliner Straßennetz für Familien auf dem Fahrrad,
 folgende Dinge wurden dabei berücksichtigt:
 
 1. ::: card
@@ -79,8 +79,8 @@ sehr kurze Wege praktikabel.
 
 ### Was bringt also diese Karte?
 
-Die Karte zeigt deutlich: Das Berliner Wegenetz ist für autofreie Familien
-**extrem ausgedünnt.**
+Die Karte zeigt deutlich: Das Berliner Wegenetz ist für Familien,
+die mit dem Fahrrad fahren, **extrem ausgedünnt.**
 
 &#x1F6A7; Ganze Ortsteile sind quasi **von wirklich sicheren Strecken abgeschitten.**
 Bis auf Wege entlang der Ausfallstraßen gibt es dort praktisch keine Infrastruktur für
