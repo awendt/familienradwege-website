@@ -61,3 +61,5 @@ Und so sieht es überall in der Stadt aus.
 ## &#x1F50E; Und was findest *du* auf der Karte?
 
 &#x2B06; Gehe [zurück zur Karte](#mapid).
+
+[zur Startseite](/){.btn}

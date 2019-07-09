@@ -92,6 +92,14 @@ p {
   font-size: 1.125rem;
 }
 
+.btn {
+  padding: 14px 24px;
+  background-color: $text1;
+  border-radius:5px;
+  color: #fff;
+  background-image: linear-gradient(to bottom, lighten( $text1, 20% ), $text1);
+}
+
 footer {
   text-align: center;
   margin: 100px 0 30px 0;
