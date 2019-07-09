@@ -16,6 +16,7 @@ var map = new Map({
   ],
   view: new View({
     center: fromLonLat(BERLIN_COORDINATES),
+    minZoom: 10,
     zoom: 13
   })
 });
