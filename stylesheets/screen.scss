@@ -50,21 +50,22 @@ h3 {
     max-height: 400px;
     display: block;
     overflow: hidden;
-    background: #fff url(../images/map.jpg) top left no-repeat;
+    border-top: 350px solid transparent;
+    border-image: url(../images/map.jpg) 88% 0 0 0; // border is 350px high which is 88% of total height
+    background-color: #fff;
     margin: $header-margin 0 0 auto;
 
     @media
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
       /* Retina-specific stuff here */
-      background: #fff url(../images/map@2x.jpg) top left no-repeat;
-      background-size: 400px 400px;
+      border-image: url(../images/map@2x.jpg) 88% 0 0 0;
     }
     @media (max-width: 992px) {
       /* align right when md column collapses */
       margin: $header-margin 0 0 0;
     }
-    padding: 410px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
     text-align: center;
     border-radius: 5px;
     box-shadow: 3px 3px 5px 6px #ccc;
