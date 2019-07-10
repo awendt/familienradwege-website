@@ -14,7 +14,7 @@ header-includes:
 
 ::: col
 
-# Mit dem Auto kommen Familien in der Stadt überall hin.
+# Mit dem Auto kommen Familien in der Stadt überall\ hin.
 
 ## Und mit dem Fahrrad?
 
