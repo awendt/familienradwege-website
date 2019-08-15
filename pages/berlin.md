@@ -17,7 +17,7 @@ include-after:
 
 <div id="mapid"></div>
 
-## &#x1F6B3; Innenstadt: keine Durchfahrt
+## 🚳 Innenstadt: keine Durchfahrt
 
 Der Innenstadtring umschließt die historische Mitte Berlins in den Bezirken Mitte,
 Pankow und Friedrichshain-Kreuzberg. Seine Ost-West-Ausdehnung beträgt etwa 5
@@ -30,7 +30,7 @@ weder durchqueren noch komplett um die Innenstadt fahren.
        alt="Karte: Es gibt keine Möglichkeit, die Innenstadt auf dem Fahrrad zu queren" />
 </p>
 
-## &#x1F333; Parks: Radfahren als Hobby
+## 🌳 Parks: Radfahren als Hobby
 
 Die höchste Dichte an Radwegen findet man in Parks.
 Das Fahrrad wird also eher als Spielzeug und Freizeitbeschäftigung,
@@ -42,7 +42,7 @@ nicht aber zur Fortbewegung gesehen.
        alt="Karte: Das beste Wegenetz befindet sich in Parks – geschlossene Systeme also, in denen man das Fahrrad nur zur Freizeitbeschäftigung nutzen kann" />
 </p>
 
-## &#x1F3DA; Ein Flickenteppich
+## 🏚 Ein Flickenteppich
 
 Für alltägliche Wege (zur Schule, zum Einkaufen, zur Arztpraxis, zur Bibliothek) gibt
 es keine zusammenhängende Infrastruktur, nur mal ein paar hundert Meter hier und ein
@@ -58,7 +58,7 @@ Und so sieht es überall in der Stadt aus.
        alt="Karte: Radwege beginnen und enden im Nichts" />
 </p>
 
-## &#x1F50E; Und was findest *du* auf der Karte?
+## 🔎 Und was findest *du* auf der Karte?
 
 &#x2B06; Gehe [zurück zur Karte](#mapid).
 
