@@ -36,13 +36,13 @@ folgende Dinge wurden dabei berücksichtigt:
 1. ::: card
    ![](images/cycleway-track.png)
 
-   Baulich abgesetzte Radwege <em>neben</em> der Fahrbahn &#x1F389;
+   Baulich abgesetzte Radwege <em>neben</em> der Fahrbahn 🎉
    :::
 
 2. ::: card
    ![](images/richard-kolkwitz-weg-berlin-dieser-weg-verlaeuft-17031.jpg)
 
-   Für den Radverkehr vorgesehene Wege &#x1F44D;
+   Für den Radverkehr vorgesehene Wege 👍
 
    <small>Foto: [Thomas Wendt](https://bit.ly/2XlvWVr)</small>
    :::
@@ -50,7 +50,7 @@ folgende Dinge wurden dabei berücksichtigt:
 3. ::: {.card .no}
    ![](images/cycleway-lane.jpg)
 
-   Keine Radwege _auf_ der Fahrbahn &#x1f648;
+   Keine Radwege _auf_ der Fahrbahn 🙈
 
    <small>Foto: [Ulamm](https://w.wiki/59Z), GFDL/CC BY-SA</small>
    :::
@@ -64,8 +64,14 @@ folgende Dinge wurden dabei berücksichtigt:
 Diese Kombination ist für Familien am sichersten, das sind die **Familienradwege.**
 
 Kinder dürfen erst mit 10 auf der Fahrbahn fahren. Und selbst wenn sie dafür alt genug
-sind, gefährdet das Fahrverhalten vieler, die im Auto unterwegs sind, Kinder unnötig.
-Das sind zwei gute Gründe, Wege auf der Fahrbahn zu ignorieren.
+sind:
+
+> Die Nähe zum Verkehr heißt außerdem, dass Autofahrer […]
+> zum Halten, Entladen oder Parken in die Radspuren schwenken – oder sie,
+> ohne zu blinken, beim Abbiegen um eine Ecke kreuzen. Man muss ständig
+> auf der Hut sein. **Ich möchte nicht, dass mein Kind auf solchen Spuren fährt.**
+>
+> --- [David Byrne](https://de.wikipedia.org/wiki/David_Byrne_(Musiker)), _Bicycle Diaries_
 
 Natürlich dürfen Familien auch auf Gehwegen radeln. Aber das ist ein ständiges
 Verhandeln mit denjenigen Menschen, für die Gehwege eigentlich gedacht sind. Und es
