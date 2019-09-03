@@ -3,7 +3,7 @@
 h2 {
   font-size: 2rem;
   margin-top: 50px;
-  padding: $padding;
+  padding: $grid-padding;
 }
 
 img {
@@ -36,5 +36,8 @@ body > p:not(.img) {
 }
 
 body > h2 {
+  text-indent: -2.5rem;
+  padding-left: calc(2.5rem + #{$grid-padding});
+
   @extend %left-margin;
 }
