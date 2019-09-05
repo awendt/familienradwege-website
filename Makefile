@@ -30,11 +30,12 @@ node_modules:
 screenshots:
 	$(MAKE) -C images
 
-website/index.html: $(HTML)
+website/index.html: $(addprefix html/,$(HTML))
 	npx parcel build $^ --out-dir website --no-source-maps
 
-%.html %/index.html: pages/%.md pages/footer.md
-	pandoc --standalone -t html5 $^ > $@
+html/%.html html/%/index.html: pages/%.md pages/footer.md
+	mkdir -p $(dir $@)
+	pandoc --standalone -f markdown-implicit_figures -t html5 $^ > $@
 
 website/data/berlin/%.json:
 	mkdir -p website/data/berlin
