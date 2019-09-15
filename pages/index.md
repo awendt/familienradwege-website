@@ -100,6 +100,8 @@ erste und letzte Meile erst überwinden müssen – nur beim Mittelteil kommen w
 Familien auf dem Rad schnell voran. Für Kurzstrecken ist die Bewegungsfreiheit im Kiez 
 selbst stark eingeschränkt, auch wenn die Kinder radeln *wollen*.
 
+[💡 Woher stammen die Kartendaten?](./daten){.btn .data}
+
 :::
 
 :::

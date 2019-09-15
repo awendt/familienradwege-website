@@ -86,10 +86,14 @@ h3 {
   }
 }
 
-p {
+p, ul, ol, dt {
   line-height: 1.5rem;
   color: $copy;
   font-size: 1.125rem;
+}
+
+dt {
+  font-weight: bold;
 }
 
 .btn {
@@ -98,6 +102,7 @@ p {
   border-radius:5px;
   color: #fff;
   background-image: linear-gradient(to bottom, lighten( $text1, 20% ), $text1);
+  text-decoration: none;
 }
 
 footer {

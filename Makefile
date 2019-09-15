@@ -1,4 +1,4 @@
-HTML = index.html berlin/index.html
+HTML = index.html berlin/index.html daten/index.html
 
 # always re-build website
 .PHONY: website/index.html server watch screenshots
