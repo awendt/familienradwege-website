@@ -2,7 +2,7 @@
 pagetitle: 'Familienradwege'
 css:
 - //code.cdn.mozilla.net/fonts/fira.css
-- ./stylesheets/screen.scss
+- ../stylesheets/screen.scss
 header-includes:
 - |
   ```{=html}
@@ -34,13 +34,13 @@ Die Karte zeigt das Berliner Straßennetz für Familien auf dem Fahrrad,
 folgende Dinge wurden dabei berücksichtigt:
 
 1. ::: card
-   ![](images/cycleway-track.png)
+   ![](../images/cycleway-track.png)
 
    Baulich abgesetzte Radwege <em>neben</em> der Fahrbahn 🎉
    :::
 
 2. ::: card
-   ![](images/richard-kolkwitz-weg-berlin-dieser-weg-verlaeuft-17031.jpg)
+   ![](../images/richard-kolkwitz-weg-berlin-dieser-weg-verlaeuft-17031.jpg)
 
    Für den Radverkehr vorgesehene Wege 👍
 
@@ -48,7 +48,7 @@ folgende Dinge wurden dabei berücksichtigt:
    :::
 
 3. ::: {.card .no}
-   ![](images/cycleway-lane.jpg)
+   ![](../images/cycleway-lane.jpg)
 
    Keine Radwege _auf_ der Fahrbahn 🙈
 
@@ -99,6 +99,8 @@ Gerade für lange Strecken benötigen wir **viel mehr Zeit als nötig**, weil wi
 erste und letzte Meile erst überwinden müssen – nur beim Mittelteil kommen wir 
 Familien auf dem Rad schnell voran. Für Kurzstrecken ist die Bewegungsfreiheit im Kiez 
 selbst stark eingeschränkt, auch wenn die Kinder radeln *wollen*.
+
+[💡 Woher stammen die Kartendaten?](./daten){.btn .data}
 
 :::
 

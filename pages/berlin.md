@@ -2,7 +2,7 @@
 pagetitle: 'Familienradwege in Berlin'
 css:
 - //code.cdn.mozilla.net/fonts/fira.css
-- ../stylesheets/berlin.scss
+- ../../stylesheets/berlin.scss
 header-includes:
 - |
   ```{=html}
@@ -10,7 +10,7 @@ header-includes:
   ```
 include-after:
 - |
-  <script src="../js/index.js"></script>
+  <script src="../../js/index.js"></script>
 ---
 
 # Familienradwege in Berlin
@@ -25,8 +25,8 @@ Kilometer – eine Entfernung ideal fürs Fahrrad. Auf dem Rad können Familien 
 weder durchqueren noch komplett um die Innenstadt fahren.
 
 <p class="img">
-  <img src="../images/berlin/map-city.jpg"
-       srcset="../images/berlin/map-city@2x.jpg 2x"
+  <img src="../../images/berlin/map-city.jpg"
+       srcset="../../images/berlin/map-city@2x.jpg 2x"
        alt="Karte: Es gibt keine Möglichkeit, die Innenstadt auf dem Fahrrad zu queren" />
 </p>
 
@@ -37,8 +37,8 @@ Das Fahrrad wird also eher als Spielzeug und Freizeitbeschäftigung,
 nicht aber zur Fortbewegung gesehen.
 
 <p class="img">
-  <img src="../images/berlin/map-parks.jpg"
-       srcset="../images/berlin/map-parks@2x.jpg 2x"
+  <img src="../../images/berlin/map-parks.jpg"
+       srcset="../../images/berlin/map-parks@2x.jpg 2x"
        alt="Karte: Das beste Wegenetz befindet sich in Parks – geschlossene Systeme also, in denen man das Fahrrad nur zur Freizeitbeschäftigung nutzen kann" />
 </p>
 
@@ -53,8 +53,8 @@ von über 16 Kilometern Länge. Hier gibt es 400 Meter familiengerechte Radwege!
 Und so sieht es überall in der Stadt aus.
 
 <p class="img">
-  <img src="../images/berlin/map-patches.jpg"
-       srcset="../images/berlin/map-patches@2x.jpg 2x"
+  <img src="../../images/berlin/map-patches.jpg"
+       srcset="../../images/berlin/map-patches@2x.jpg 2x"
        alt="Karte: Radwege beginnen und enden im Nichts" />
 </p>
 

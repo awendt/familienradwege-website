@@ -69,3 +69,15 @@ you can change files and see the changes immediately in your browser:
 ```
 $ make watch
 ```
+
+### Creating new pages
+
+You can find all content under [`pages`](pages).
+Each Markdown file in there represents one page
+(except for `footer.md` which is appended to each generated HTML file).
+
+
+To create a new page:
+
+1. Create a new `.md` file in `pages`
+2. Add it to the `HTML =` line at the top of [`Makefile`](Makefile).
