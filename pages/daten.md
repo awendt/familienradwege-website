@@ -37,16 +37,22 @@ Sollten unsere Radwegekarten Fehler enthalten, kann das folgende Gründe haben:
 : Sie werden etwa wöchentlich aktualisiert,
   zuletzt am: <span id="last-modified">[…]</span>
 
-🕵️ Unsere Karten sind aktuell, aber unsere Datenquelle OSM nicht.
+✂️ Die Strecke ist zu kurz.
+
+: Um die Menge an Daten technisch beherrschbar zu halten,
+  berücksichtigen wir nur *Wege ab 10 Meter*.
+
+🕵️ Unsere Datenquelle OpenStreetMap enthält nicht die neuesten Informationen.
 
 : Fehler und Unvollständigkeiten können in OSM korrigiert werden.
 
 : Dazu gibt es eine ausführliche
   [Hilfeseite für das Melden von Fehlern](https://wiki.openstreetmap.org/wiki/DE:Notes).
 
-✂️ Die Strecke ist zu kurz.
+🐛 Unsere Datenabfrage an OpenStreetMap hat einen Bug.
 
-: Um die Menge an Daten technisch beherrschbar zu halten,
-  ignorieren wir alle Wege, die kürzer als 10 Meter sind.
+: In dem Fall ist es am besten, uns das Problem bei
+  [Github](https://github.com/awendt/familienradwege/issues)
+  zu melden.
 
 [zur Startseite](/){.btn}
