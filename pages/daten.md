@@ -55,4 +55,11 @@ Sollten unsere Radwegekarten Fehler enthalten, kann das folgende Gründe haben:
   [Github](https://github.com/awendt/familienradwege/issues)
   zu melden.
 
+Die Abfrage, Aufbereitung und Bereitstellung der Kartendaten
+erfolgt getrennt von der Website, denn es gibt wenig inhaltlich noch
+technisch Überschneidungen.
+
+[Der Quelltext ist auf Github verfügbar](https://github.com/awendt/familienradwege).
+Bitte macht mit und helft uns, die Karte zu verbessern oder neue Städte hinzuzufügen!
+
 [zur Startseite](/){.btn}
