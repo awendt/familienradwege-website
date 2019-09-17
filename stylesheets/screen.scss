@@ -97,12 +97,13 @@ dt {
 }
 
 .btn {
-  padding: 14px 24px;
+  padding: 14px;
   background-color: $text1;
   border-radius:5px;
   color: #fff;
   background-image: linear-gradient(to bottom, lighten( $text1, 20% ), $text1);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 footer {
