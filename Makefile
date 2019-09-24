@@ -51,6 +51,6 @@ server:
 	ruby -run -e httpd website/ -p $(PORT) || php -S localhost:$(PORT)
 
 watch:
-	npx parcel watch $(HTML) --out-dir website
+	npx parcel watch $(addprefix html/,$(HTML)) --out-dir website
 
 ###################################
