@@ -33,7 +33,7 @@ screenshots:
 website/index.html: $(addprefix html/,$(HTML))
 	npx parcel build $^ --out-dir website --no-source-maps
 
-html/%.html html/%/index.html: pages/%.md pages/footer.md
+html/%.html html/%/index.html: pages/_navigation.md pages/%.md pages/_footer.md
 	mkdir -p $(dir $@)
 	pandoc --standalone -f markdown-implicit_figures -t html5 $^ > $@
 
