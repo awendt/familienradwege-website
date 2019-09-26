@@ -115,6 +115,11 @@ dt {
   background-image: linear-gradient(to bottom, lighten( $text1, 20% ), $text1);
   text-decoration: none;
   white-space: nowrap;
+
+  &.small {
+    font-size: .9rem;
+    padding: 7px;
+  }
 }
 
 footer {
