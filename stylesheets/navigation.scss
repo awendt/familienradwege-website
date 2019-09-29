@@ -33,9 +33,7 @@ nav ul {
   }
 
   .nav-wrapper {
-    position: relative;
-    width: $nav-break-point;
-    margin: auto;
+    display: none;
   }
 
   #primary-nav {
