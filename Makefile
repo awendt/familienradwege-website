@@ -10,7 +10,7 @@ build: website/index.html
 ##########################################
 # Check installation of required software
 ##########################################
-check: check-node check-npm check-pandoc
+check: check-fswatch check-node check-npm check-pandoc
 
 RED=\033[0;31m
 GREEN=\033[0;32m
@@ -41,16 +41,13 @@ website/data/berlin/%.json:
 	mkdir -p website/data/berlin
 	wget --directory-prefix=website/data/berlin --compression=auto https://www.familienradwege.de/data/berlin/$(notdir $@)
 
-PORT = 1234
-
 ###################################
 # Convenience tools for developing
 ###################################
 
-server:
-	ruby -run -e httpd website/ -p $(PORT) || php -S localhost:$(PORT)
+PORT ?= 1234
 
-watch:
-	npx parcel watch $(addprefix html/,$(HTML)) --out-dir website
+start-dev-server:
+	PORT=$(PORT) FILES="$(addprefix html/,$(HTML))" npx nf start
 
 ###################################
