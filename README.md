@@ -71,7 +71,7 @@ You can adjust the port using `make start-dev-server PORT=xyz`.
 <details>
 <summary>How is this dev server working?</summary>
 
-[Parcel ships with development server](https://parceljs.org/getting_started.html)
+[Parcel ships with a development server](https://parceljs.org/getting_started.html)
 but since you don't edit HTML files directly in this project, that's not enough.
 So to make this easy to work with, we need 3 parts:
 
