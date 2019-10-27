@@ -87,6 +87,16 @@ when you run `make start-dev-server`.
 
 </details>
 
+When you have any problems with files not being updated, as a first step,
+stop the dev server and run:
+
+```
+make clean
+```
+
+Doing so removes Parcel's cache so you can start over with a clean state.
+This is a safe command – it does not touch any of the files you edited.
+
 ### Creating new pages
 
 You can find all content under [`pages`](pages).
