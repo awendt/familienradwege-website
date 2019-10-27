@@ -1,7 +1,7 @@
 HTML = index.html berlin/index.html daten/index.html
 
 # always re-build website
-.PHONY: website/index.html start-dev-server screenshots html/index/index.html
+.PHONY: website/index.html start-dev-server screenshots
 
 all: install local build
 
@@ -33,12 +33,12 @@ screenshots:
 website/index.html: $(addprefix html/,$(HTML))
 	npx parcel build $^ --out-dir website --no-source-maps
 
-# This phony target is just an alias
-html/index/index.html: html/index.html
-
-html/%.html html/%/index.html: pages/_navigation.md pages/%.md pages/_footer.md
+html/%/index.html: pages/_navigation.md pages/%.md pages/_footer.md
 	mkdir -p $(dir $@)
 	pandoc --standalone -f markdown-implicit_figures -t html5 $^ > $@
+
+html/index.html: html/index/index.html
+	cp $< $@
 
 website/data/berlin/%.json:
 	mkdir -p website/data/berlin
