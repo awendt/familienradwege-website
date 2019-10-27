@@ -32,6 +32,7 @@ Run the following, every line should have a check mark:
 
 ```bash
 $ make check
+✔ fswatch
 ✔ node
 ✔ npm
 ✔ pandoc
@@ -52,23 +53,49 @@ This will do the following:
 2. Download map data
 3. Create all HTML and all referenced files (images, CSS) and place them into the sub-directory `website/`
 
-To view the website, run:
+### Development server
+
+There is a development server which will automatically rebuild your app as you
+change files and supports hot module replacement for fast development.
+
+This server requires [`fswatch`](https://github.com/emcrisostomo/fswatch).
+To run the dev server, run:
 
 ```
-$ make server
+$ make start-dev-server
 ```
 
 and point your browser to http://localhost:1234/.
-You can adjust the port using `make server PORT=4321`.
+You can adjust the port using `make start-dev-server PORT=xyz`.
 
-### Re-build when files change
+<details>
+<summary>How is this dev server working?</summary>
 
-If you leave `make server` running in a terminal and run watch mode in another,
-you can change files and see the changes immediately in your browser:
+[Parcel ships with a development server](https://parceljs.org/getting_started.html)
+but since you don't edit HTML files directly in this project, that's not enough.
+So to make this easy to work with, we need 3 parts:
+
+1. `fswatch` watches Markdown files and re-builds HTML if necessary.
+2. Parcel watches HTML files and its asset dependencies (Javascript, CSS),
+   re-builds the website if necessary and ensures your browser is updated.
+3. The server that serves the application to the browser. Parcel could do this
+   itself but it does not recognize the permalinks this project is using.
+
+These three parts are orchestrated by the [`Procfile`](Procfile) and
+[`node-foreman`](https://github.com/strongloop/node-foreman) which is started
+when you run `make start-dev-server`.
+
+</details>
+
+When you have any problems with files not being updated, as a first step,
+stop the dev server and run:
 
 ```
-$ make watch
+make clean
 ```
+
+Doing so removes Parcel's cache so you can start over with a clean state.
+This is a safe command – it does not touch any of the files you edited.
 
 ### Creating new pages
 
