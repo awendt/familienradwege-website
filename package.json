@@ -3,7 +3,7 @@
     "normalize.css": "^8.0.1",
     "ol": "^6.0.0",
     "ol-layerswitcher": "^3.3.0",
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {
     "file-saver": "^2.0.2",
