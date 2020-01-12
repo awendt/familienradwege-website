@@ -7,6 +7,9 @@ import LayerSwitcher from 'ol-layerswitcher';
 
 const BERLIN_COORDINATES = [13.410, 52.524];
 
+var northwestCorner = fromLonLat([12.766667, 52.799722]); // Fehrbellin
+var southeastCorner = fromLonLat([14.416667, 52.25]);     // Müllrose
+
 var map = new Map({
   target: 'mapid',
   layers: [
@@ -16,6 +19,8 @@ var map = new Map({
   ],
   view: new View({
     center: fromLonLat(BERLIN_COORDINATES),
+    // array of numbers representing an extent: [minx, miny, maxx, maxy]
+    extent: [northwestCorner[0], southeastCorner[1], southeastCorner[0], northwestCorner[1]],
     minZoom: 10,
     zoom: 13
   })
