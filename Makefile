@@ -46,6 +46,7 @@ website/data/berlin/%.json:
 
 clean:
 	rm -rf .cache
+	git clean --force -X website
 
 ###################################
 # Convenience tools for developing
