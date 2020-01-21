@@ -7,6 +7,9 @@ all: install local build
 
 build: website/index.html
 
+proof: website/index.html
+	htmlproofer website
+
 ##########################################
 # Check installation of required software
 ##########################################

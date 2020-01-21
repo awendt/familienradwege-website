@@ -8,9 +8,10 @@ before_install:
   - wget -O /tmp/pandoc.deb https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb
   - sudo dpkg -i /tmp/pandoc.deb
   - sudo apt-get install --fix-broken
+  - gem install html-proofer
 
 script:
-  - make build
+  - make build proof
 
 deploy:
   provider: s3
