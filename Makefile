@@ -8,7 +8,7 @@ all: install local build
 build: website/index.html
 
 proof: website/index.html
-	htmlproofer website
+	htmlproofer --empty-alt-ignore website
 
 ##########################################
 # Check installation of required software
