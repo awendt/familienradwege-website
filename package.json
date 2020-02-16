@@ -8,6 +8,7 @@
   "devDependencies": {
     "file-saver": "^2.0.2",
     "foreman": "^3.0.1",
+    "html-to-image": "^0.1.1",
     "node-sass": "^4.13.1"
   }
 }
