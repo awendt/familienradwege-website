@@ -58,6 +58,6 @@ clean:
 PORT ?= 1234
 
 start-dev-server:
-	PORT=$(PORT) FILES="$(addprefix html/,$(HTML))" npx nf start
+	PORT=$(PORT) FILES="$(addprefix html/,$(HTML) screenshot/index.html)" npx nf start
 
 ###################################

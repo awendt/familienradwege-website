@@ -4,7 +4,8 @@ import Map from 'ol/Map';
 import View from 'ol/View';
 import { fromLonLat } from 'ol/proj';
 import LayerSwitcher from 'ol-layerswitcher';
-import FileSaver from 'file-saver';
+import { saveAs } from 'file-saver';
+import { toBlob } from 'html-to-image';
 
 const BERLIN_COORDINATES = [13.410, 52.524];
 
@@ -24,16 +25,20 @@ var map = new Map({
 var layerSwitcher = new LayerSwitcher();
 map.addControl(layerSwitcher);
 
+// export options for html-to-image.
+// See: https://github.com/bubkoo/html-to-image#options
+var exportOptions = {
+  filter: (element) => {
+    return element.className ? element.className.indexOf('ol-control') === -1 : true;
+  }
+};
+
 document.getElementById('export-png').addEventListener('click', function() {
-  map.once('rendercomplete', function(event) {
-    var canvas = event.context.canvas;
-    if (navigator.msSaveBlob) {
-      navigator.msSaveBlob(canvas.msToBlob(), 'map.png');
-    } else {
-      canvas.toBlob(function(blob) {
-        FileSaver.saveAs(blob, 'map.png');
+  map.once('rendercomplete', () => {
+    toBlob(map.getTargetElement(), exportOptions)
+      .then((blob) => {
+        saveAs(blob, 'map.png');
       });
-    }
   });
   map.renderSync();
 });
