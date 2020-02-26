@@ -4,6 +4,7 @@ import Map from 'ol/Map';
 import View from 'ol/View';
 import { fromLonLat } from 'ol/proj';
 import LayerSwitcher from 'ol-layerswitcher';
+import { saveAs } from 'file-saver';
 import { toBlob } from 'html-to-image';
 
 const BERLIN_COORDINATES = [13.410, 52.524];
@@ -36,7 +37,7 @@ document.getElementById('export-png').addEventListener('click', function() {
   map.once('rendercomplete', () => {
     toBlob(map.getTargetElement(), exportOptions)
       .then((blob) => {
-        window.saveAs(blob, 'map.png');
+        saveAs(blob, 'map.png');
       });
   });
   map.renderSync();
