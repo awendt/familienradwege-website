@@ -1,0 +1,17 @@
+name: build-page
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12'
+    - name: Install pandoc
+      run: brew install pandoc
+    - name: Check pandoc version
+      run: pandoc --version
