@@ -13,5 +13,15 @@ jobs:
         node-version: '12'
     - name: Install pandoc
       run: brew install pandoc
-    - name: Check pandoc version
-      run: pandoc --version
+    - uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Install dependencies
+      run: npm ci
+    - name: Install html-proofer
+      run: gem install html-proofer
+    - name: Build website and proof it
+      run: make build proof
