@@ -25,9 +25,9 @@ jobs:
       run: npm ci
     - name: Debug gem env
       run: gem env
-    - name: Inspect path
-      run: ls -la ~/.gem/ruby/2.7.0
     - name: Install html-proofer
       run: gem install html-proofer --user-install
+    - name: Inspect path
+      run: ls -la ~/.gem/ruby/2.7.0
     - name: Build website and proof it
       run: make build proof
