@@ -23,11 +23,29 @@ jobs:
           ${{ runner.os }}-node-
     - name: Install dependencies
       run: npm ci
+    - name: Build website
+      run: make build
+    - uses: actions/upload-artifact@v2
+      with:
+        name: website
+        path: website
+
+  check:
+    needs: build
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.7'
+    - name: Download website artifact from build job
+      uses: actions/download-artifact@v2
+      with:
+        name: website
     - name: Debug gem env
       run: gem env
     - name: Install html-proofer
-      run: gem install html-proofer --user-install
-    - name: Add PATH
-      run: echo "::add-path::~/.gem/ruby/2.7.0/bin"
-    - name: Build website and proof it
-      run: make build proof
+      run: gem install html-proofer
+    - name: Check website
+      run: make proof
