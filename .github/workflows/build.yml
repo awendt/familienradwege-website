@@ -27,7 +27,7 @@ jobs:
       run: gem env
     - name: Install html-proofer
       run: gem install html-proofer --user-install
-    - name: Inspect path
-      run: ls -la ~/.gem/ruby/2.7.0
+    - name: Add PATH
+      run: echo "::add-path::~/.gem/ruby/2.7.0/bin"
     - name: Build website and proof it
       run: make build proof
