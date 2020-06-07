@@ -21,7 +21,9 @@ jobs:
           ${{ runner.os }}-node-
     - name: Install dependencies
       run: npm ci
+    - name: Debug gem env
+      run: gem env
     - name: Install html-proofer
-      run: gem install html-proofer
+      run: gem install html-proofer --user-install
     - name: Build website and proof it
       run: make build proof
