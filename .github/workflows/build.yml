@@ -2,6 +2,9 @@ name: build-page
 
 on: [push]
 
+env:
+  HOMEBREW_NO_AUTO_UPDATE: 1
+
 jobs:
   build:
     runs-on: ubuntu-20.04
@@ -13,8 +16,6 @@ jobs:
         node-version: '12'
     - name: Install pandoc
       run: brew install pandoc
-      env:
-        HOMEBREW_NO_AUTO_UPDATE: 1
     - uses: actions/cache@v2
       with:
         path: ~/.npm
@@ -44,9 +45,13 @@ jobs:
       with:
         name: website
         path: website
+    - name: Install libxml2
+      run: brew install libxml2
     - name: Debug gem env
       run: gem env
     - name: Install html-proofer
-      run: gem install html-proofer
+      env:
+        NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+      run: gem install pkg-config:'~> 1.4' html-proofer
     - name: Check website
       run: htmlproofer --empty-alt-ignore website
