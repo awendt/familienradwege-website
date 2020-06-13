@@ -1,6 +1,6 @@
 name: build-page
 
-on: [push]
+on: [push, pull_request]
 
 env:
   HOMEBREW_NO_AUTO_UPDATE: 1
