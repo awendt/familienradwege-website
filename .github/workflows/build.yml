@@ -47,7 +47,7 @@ jobs:
       run: /usr/gem/bin/htmlproofer --empty-alt-ignore website
 
   upload:
-    if: github.ref == 'github-actions-upload'
+    if: github.ref == 'refs/heads/github-actions-upload'
     needs: check
     runs-on: ubuntu-20.04
 
