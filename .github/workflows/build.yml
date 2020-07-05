@@ -34,6 +34,10 @@ jobs:
   check:
     needs: build
     runs-on: ubuntu-20.04
+    container:
+      image: jekyll/builder:latest
+      volumes:
+        - website:/srv/jekyll
 
     steps:
     - uses: actions/checkout@v2
@@ -45,11 +49,5 @@ jobs:
       with:
         name: website
         path: website
-    - name: Nokogiri dependencies
-      run: sudo apt-get install --no-upgrade libxml2-dev libxslt-dev
-    - name: Install html-proofer
-      env:
-        NOKOGIRI_USE_SYSTEM_LIBRARIES: true
-      run: gem install html-proofer
     - name: Check website
-      run: htmlproofer --empty-alt-ignore website
+      run: /usr/gem/bin/htmlproofer --empty-alt-ignore
