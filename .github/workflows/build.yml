@@ -47,4 +47,4 @@ jobs:
         name: website
         path: website
     - name: Check website
-      run: /usr/gem/bin/htmlproofer --empty-alt-ignore
+      run: /usr/gem/bin/htmlproofer --empty-alt-ignore website
