@@ -34,10 +34,7 @@ jobs:
   check:
     needs: build
     runs-on: ubuntu-20.04
-    container:
-      image: jekyll/builder:latest
-      volumes:
-        - website:/srv/jekyll
+    container: jekyll/builder:latest
 
     steps:
     - uses: actions/checkout@v2
