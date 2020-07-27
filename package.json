@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "ol": "^6.3.1",
+    "ol": "^6.4.0",
     "ol-layerswitcher": "^3.6.0",
     "parcel-bundler": "^1.12.4"
   },
