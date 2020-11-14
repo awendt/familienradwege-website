@@ -3,6 +3,7 @@ import OSM from 'ol/source/OSM';
 
 export const create_tile_layer = (url) => {
   return new TileLayer({
+    className: 'bw',
     source: new OSM({
       attributions: [
         '&#169; ' +
