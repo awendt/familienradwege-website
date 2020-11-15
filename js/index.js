@@ -10,7 +10,7 @@ const BERLIN_COORDINATES = [13.410, 52.524];
 var map = new Map({
   target: 'mapid',
   layers: [
-    create_tile_layer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png'),
+    create_tile_layer('https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png'),
     roads_layer,
     paths_layer
   ],
