@@ -1,6 +1,11 @@
 name: build-page
 
-on: [push, pull_request]
+on:
+  pull_request:
+
+  push:
+    branches:
+      - master
 
 env:
   HOMEBREW_NO_AUTO_UPDATE: 1
