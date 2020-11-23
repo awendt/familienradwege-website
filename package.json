@@ -2,7 +2,7 @@
   "dependencies": {
     "normalize.css": "^8.0.1",
     "ol": "^6.4.3",
-    "ol-layerswitcher": "^3.7.0",
+    "ol-layerswitcher": "^3.8.0",
     "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {
